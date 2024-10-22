@@ -13,6 +13,8 @@ import comoDepositar from "./banner-como-depositar-na-premier-bet-pelo-multicaix
 import quiz from "./Quiz-for-cash-premier-bet-angola.webp"
 import tudoSobre from "./tudo-sobre-permierbet-copiar.webp"
 
+import fundoFooter from "./fundo para blur.avif"
+
 
 export { 
     Logo, 
@@ -26,5 +28,6 @@ export {
     comoCriarCobta,
     comoDepositar,
     quiz,
-    tudoSobre 
+    tudoSobre,
+    fundoFooter
 }

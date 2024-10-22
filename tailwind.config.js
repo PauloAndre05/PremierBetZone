@@ -4,7 +4,17 @@ export default {
     "./index.html", "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        customPulse: {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0.2 },
+        },
+      },
+      animation: {
+        customPulse: 'customPulse 2s ease-in-out infinite',
+      },
+    },
   },
   plugins: [],
 }

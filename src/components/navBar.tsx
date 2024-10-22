@@ -27,7 +27,8 @@ export const NavBar = () => {
         <nav className="flex">
             <ul className="flex gap-3">
                 {menu.map(item => (
-                    <a href="#"
+                    <a href="https://www.premierbet.co.ao/bonus/register-exclusive-welcome-bonus?btag=691844_c09ba9bd59ff4d45885aeb846b623dc9&utm_medium
+"
                         key={item.id}
                         className="flex gap-1 items-center text-white"
                     >

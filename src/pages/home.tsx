@@ -12,6 +12,8 @@ import {
     centralBanner3,
  } from "../assets/images/index"
 import { News } from "../components/news";
+import { Footer } from "../components/footer";
+import { Promocional } from "../components/promocional";
 
 export const Home = () => {
 
@@ -43,6 +45,8 @@ export const Home = () => {
                 </Slider>
             </div>
             <News />
+            <Promocional />
+            <Footer />
         </div>
     )
 }
