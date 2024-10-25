@@ -3,6 +3,15 @@ import { createRoot } from 'react-dom/client'
 import { App } from './App'
 import "./styles/globalStyles.css"
 
+import { register } from 'swiper/element-bundle'
+
+register()
+
+import "swiper/css"
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />

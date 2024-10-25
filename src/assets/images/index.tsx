@@ -10,10 +10,12 @@ import centralBanner3 from "./centralBanner3.gif"
 
 import comoCriarCobta from "./banner-como-criar-uma-conta-na-premier-bet.webp"
 import comoDepositar from "./banner-como-depositar-na-premier-bet-pelo-multicaixa-express.webp"
-import quiz from "./Quiz-for-cash-premier-bet-angola.webp"
+import ganha from "./ganhar.jpg"
 import tudoSobre from "./tudo-sobre-permierbet-copiar.webp"
 
 import fundoFooter from "./fundo para blur.avif"
+
+import comoFunciona from "./comoFunciona.jpg"
 
 
 export { 
@@ -27,7 +29,8 @@ export {
     centralBanner3,
     comoCriarCobta,
     comoDepositar,
-    quiz,
+    ganha,
     tudoSobre,
-    fundoFooter
+    fundoFooter,
+    comoFunciona
 }

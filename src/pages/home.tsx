@@ -14,6 +14,7 @@ import {
 import { News } from "../components/news";
 import { Footer } from "../components/footer";
 import { Promocional } from "../components/promocional";
+import { ComoFunciona } from "../components/comoFunciona";
 
 export const Home = () => {
 
@@ -45,6 +46,7 @@ export const Home = () => {
                 </Slider>
             </div>
             <News />
+            <ComoFunciona />
             <Promocional />
             <Footer />
         </div>
