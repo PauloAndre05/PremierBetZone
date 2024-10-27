@@ -1,5 +1,5 @@
 import { Banner } from "../components/banner"
-import { Header } from "../components/header"
+import { HeaderDesktop } from "../components/headerDesktop"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -15,6 +15,8 @@ import { News } from "../components/news";
 import { Footer } from "../components/footer";
 import { Promocional } from "../components/promocional";
 import { ComoFunciona } from "../components/comoFunciona";
+import { HeaderMobile } from "../components/headerMobile";
+import { Colaboradores } from "../components/colaboradores";
 
 export const Home = () => {
 
@@ -26,6 +28,7 @@ export const Home = () => {
 
     const settings = {
         dots: false,
+        arrows: false,
         infinite: true,
         speed: 1,
         slidesToShow: 1,
@@ -36,9 +39,10 @@ export const Home = () => {
 
     return(
         <div>
-            <Header />
+            <HeaderDesktop />
+            <HeaderMobile />
             <Banner />
-            <div className="my-10 max-w-screen-lg mx-auto">
+            <div className="md:my-10 max-w-screen-lg mx-auto">
                 <Slider {...settings}>
                     {sliderImages.map(item => (
                         <img key={item.id} src={item.image} alt="ImageSlider" />
@@ -47,6 +51,7 @@ export const Home = () => {
             </div>
             <News />
             <ComoFunciona />
+            <Colaboradores />
             <Promocional />
             <Footer />
         </div>

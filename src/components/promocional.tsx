@@ -20,7 +20,7 @@ export const Promocional = () => {
     }
     
     return(
-        <div className="mb-14 flex flex-col justify-center items-center gap-2">
+        <div className="my-14 flex flex-col justify-center items-center gap-2">
             <h1 className="text-2xl font-bold">Código Promocional</h1>
             <div className="flex items-baseline gap-2">
                 <span className="text-2xl text-[#25D366] font-bold tracking-widest">AO157322</span>

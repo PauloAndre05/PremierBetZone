@@ -21,6 +21,7 @@ export const Banner = () => {
 
     const settings = {
         dots: false,
+        arrows: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -30,10 +31,10 @@ export const Banner = () => {
 
     return(
         <div className="max-w-screen-xl mx-auto"> 
-            <div className="col-span-1 border">
+            <div className="">
                 <Slider {...settings}>
                     {sliderImages.map(item => (
-                        <img key={item.id} src={item.image} alt="ImageSlider" />
+                        <img key={item.id} src={item.image} alt="ImageSlider" className="object-cover w-full" />
                     ))}
                 </Slider>
             </div>

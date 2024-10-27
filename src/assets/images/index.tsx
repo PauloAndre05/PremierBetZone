@@ -17,6 +17,8 @@ import fundoFooter from "./fundo para blur.avif"
 
 import comoFunciona from "./comoFunciona.jpg"
 
+import colaboradoresBanner from"./colaboradoresBanner.jpg"
+
 
 export { 
     Logo, 
@@ -32,5 +34,6 @@ export {
     ganha,
     tudoSobre,
     fundoFooter,
-    comoFunciona
+    comoFunciona,
+    colaboradoresBanner
 }
