@@ -55,9 +55,8 @@ export const News = () => {
                 }}
             >
                 {CardNewsInfo.map(item => (
-                    <SwiperSlide>
+                    <SwiperSlide key={item.id}>
                         <CardNews 
-                            key={item.id}
                             image={item.image}
                             text={item.text}
                             link={item.link}
