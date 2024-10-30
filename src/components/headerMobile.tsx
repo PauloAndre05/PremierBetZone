@@ -3,6 +3,7 @@ import { Logo } from "../assets/images"
 import { NavBar } from "./navBar"
 import { TfiKey } from "react-icons/tfi"
 import { CiSearch } from "react-icons/ci"
+import { HiMenuAlt2 } from "react-icons/hi"
 
 export const HeaderMobile = () => {
     return(
@@ -11,8 +12,10 @@ export const HeaderMobile = () => {
                 <NavBar />
             </div>
             <div className="flex justify-between px-3">
-                <div className="flex gap-4 items-center">
-                    Menu
+                <div className="flex gap-6 items-center">
+                    <div className="cursor-pointer">
+                        <HiMenuAlt2  size={28} color="#FFF"/>
+                    </div>
                     <div className="w-28">
                         <img src={Logo} alt="LogoPremierBet" />
                     </div>
