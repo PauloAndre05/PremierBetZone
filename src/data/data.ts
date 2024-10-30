@@ -1,5 +1,3 @@
-// Data of the cardsNews
-
 import {
     comoCriarCobta,
     comoDepositar,
