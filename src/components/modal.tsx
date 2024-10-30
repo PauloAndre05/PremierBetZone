@@ -9,7 +9,7 @@ interface ModalProps {
     setIsOpenModal: (status: boolean) => void
 }
 
-export const Modal:FC<ModalProps> = ({ isOpenModal, setIsOpenModal }) => {
+export const Modal:FC<ModalProps> = ({ isOpenModal }) => {
 
     const [text, setText] = useState<string>("Copiar código")
     const textTocopy = "AO157322"
