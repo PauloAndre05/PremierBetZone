@@ -20,10 +20,10 @@ export const Promocional = () => {
     }
     
     return(
-        <div className="my-14 flex flex-col justify-center items-center gap-2">
-            <h1 className="text-2xl font-bold">Código Promocional</h1>
+        <div className="my-10 flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl font-bold max-lg:text-xl">Código Promocional</h1>
             <div className="flex items-baseline gap-2">
-                <span className="text-2xl text-[#25D366] font-bold tracking-widest">AO157322</span>
+                <span className="text-2xl text-[#25D366] font-bold tracking-widest max-lg:text-sm">AO157322</span>
                 <div className="relative group">
                     <button className="group">
                         <FaCopy size={20} 

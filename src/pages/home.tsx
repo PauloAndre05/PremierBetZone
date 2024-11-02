@@ -16,8 +16,6 @@ import { Footer } from "../components/footer";
 import { Promocional } from "../components/promocional";
 import { ComoFunciona } from "../components/comoFunciona";
 import { HeaderMobile } from "../components/headerMobile";
-import { Colaboradores } from "../components/colaboradores";
-
 export const Home = () => {
 
     const sliderImages = [
@@ -51,7 +49,6 @@ export const Home = () => {
             </div>
             <News />
             <ComoFunciona />
-            <Colaboradores />
             <Promocional />
             <Footer />
         </div>

@@ -40,7 +40,7 @@ export const NavBar = () => {
                         className="flex gap-1 items-center text-white max-md:py-[.7rem] max-md:mr-3"
                     >
                         <i className="max-md:hidden">{item.icon}</i>
-                        <p className="text-sm text-nowrap">{item.name}</p>
+                        <p className="text-sm max-lg:text-xs text-nowrap">{item.name}</p>
                     </button>
                 ))}
             </ul>

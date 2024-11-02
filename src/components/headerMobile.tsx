@@ -12,11 +12,11 @@ export const HeaderMobile = () => {
                 <NavBar />
             </div>
             <div className="flex justify-between px-3">
-                <div className="flex gap-6 items-center">
+                <div className="flex gap-3 items-center">
                     <div className="cursor-pointer">
-                        <HiMenuAlt2  size={28} color="#FFF"/>
+                        <HiMenuAlt2  size={24} color="#FFF"/>
                     </div>
-                    <div className="w-28">
+                    <div className="w-24">
                         <img src={Logo} alt="LogoPremierBet" />
                     </div>
                 </div>

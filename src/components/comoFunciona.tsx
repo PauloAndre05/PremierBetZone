@@ -21,7 +21,7 @@ export const ComoFunciona = () => {
     
 
     return (
-        <div className="max-w-screen-xl mx-auto py-20 max-md:py-10 max-md:w-[95%]">
+        <div className="max-w-screen-xl mx-auto py-20 max-md:py-10 max-md:w-[90%]">
             <div className="w-full flex md:gap-6 max-md:flex-col">
                 <div className="w-48 max-md:hidden flex flex-col justify-center items-center mt-[10px]">
                     <span className="text-[#ffff] text-[30px] font-bold bg-[#E37A00] w-[50px] h-[50px] flex justify-center items-center rounded-full">
@@ -51,7 +51,7 @@ export const ComoFunciona = () => {
                             COMO FUNCIONA
                         </h3>
 
-                        <h1 className="font-bold text-[30px] text-[#E37A00] flex items-center gap-2 max-md:w-full">
+                        <h1 className="font-bold text-[30px] text-[#E37A00] flex items-center gap-2 max-lg:w-full max-lg:text-xl">
                             Registar-se na PremierBet
                         </h1>
                     </div>
