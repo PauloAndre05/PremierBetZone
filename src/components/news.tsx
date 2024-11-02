@@ -25,7 +25,7 @@ export const News = () => {
                     }
                 `}
             </style>
-            <h1 className="text-2xl max-lg:text-xl font-bold text-[#186F2E] mb-10 max-md:mt-10">Ajuda e Tutoriais</h1>
+            <h1 className="text-2xl max-lg:text-xl font-bold text-[#186F2E] mb-10 max-lg:my-5 text-center">Ajuda e Tutoriais</h1>
             <Swiper
                 slidesPerView={4}
                 spaceBetween={30}

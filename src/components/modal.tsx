@@ -31,12 +31,12 @@ export const Modal:FC<ModalProps> = ({ isOpenModal, setIsOpenModal }) => {
     return(
         <div className={`${ isOpenModal ? "flex w-full max-lg:w-[70%]" : "hidden" }`}>
             <div className="w-[30rem] max-lg:w-[90%] flex flex-col justify-center items-center text-2xl fixed p-5 top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 bg-white text-black z-50 shadow-md rounded-md">
-                <h1 className="text-2xl font-bold mb-3">Código Promocional</h1>
+                <h1 className="text-2xl font-bold mb-3 max-lg:text-xl">Código Promocional</h1>
                 <div className="flex items-baseline gap-2">
-                    <span className="text-2xl text-[#25D366] font-bold tracking-widest my-4 max-lg:my-2">AO157322</span>
+                    <span className="text-2xl text-[#25D366] font-bold tracking-widest my-4 max-lg:my-0 max-lg:text-base">AO157322</span>
                     <div className="relative group">
                         <button className="group">
-                            <FaCopy size={20} 
+                            <FaCopy size={16} 
                                 onClick={copyToClipboard}
                                 onMouseLeave={refreshText}
                             />

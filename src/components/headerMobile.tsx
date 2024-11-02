@@ -4,8 +4,17 @@ import { NavBar } from "./navBar"
 import { TfiKey } from "react-icons/tfi"
 import { CiSearch } from "react-icons/ci"
 import { HiMenuAlt2 } from "react-icons/hi"
+import { useState } from "react"
+import { Modal } from "./modal"
 
 export const HeaderMobile = () => {
+
+    const [isOpenModal, setIsOpenModal] = useState(false)
+
+    const handleClick = () => {
+        setIsOpenModal(true)
+    }
+
     return(
         <div className="bg-[#009A47] md:hidden w-fulll flex flex-col">
             <div className="border-b border-[#e0e0e083] py-1">
@@ -21,20 +30,22 @@ export const HeaderMobile = () => {
                     </div>
                 </div>
                 <div className="flex gap-1">
-                <a href="#" className="flex flex-col gap-1 items-center p-1 bg-[#FAE100] text-[#000]">
-                    <i className="text-black"><PiPencilSimpleThin size={16}/></i>
-                    <p className="text-black text-[10px]">Registar</p>
-                </a>
-                <a href="#" className="flex flex-col gap-1 items-center p-1 text-white">
-                    <i><TfiKey size={16} /></i>
-                    <p className="text-[10px]">Iniciar Sessão</p>
-                </a>
-                <a href="#" className="flex flex-col gap-1 items-center p-1 text-white">
-                    <i><CiSearch size={16} /></i>
-                    <p className="text-[10px]">Procurar</p>
-                </a>
+                <button onClick={handleClick} className="flex flex-col gap-1 items-center p-3 bg-[#FAE100] text-[#000]">
+                    <i className="text-black"><PiPencilSimpleThin size={18}/></i>
+                </button>
+                <button onClick={handleClick} className="flex flex-col gap-1 items-center p-3 text-white">
+                    <i><TfiKey size={20} /></i>
+                </button>
+                <button onClick={handleClick} className="flex flex-col gap-1 items-center p-3 text-white">
+                    <i><CiSearch size={20} /></i>
+                    
+                </button>
             </div>
             </div>
+            <Modal 
+                isOpenModal={isOpenModal}
+                setIsOpenModal={setIsOpenModal}
+            />
         </div>
     )
 }

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html, body {
-    background-color: #F5F5F5;
+    background-color: #f0f0f0;
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
