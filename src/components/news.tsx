@@ -7,7 +7,7 @@ export const News = () => {
         <div className="max-w-screen-xl max-md:max-w-[90%] mx-auto">
             <style>{`
                 .swiper-pagination-bullet-active {
-                    background-color: #186F2E; /* Cor do bullet ativo */
+                    background-color: #E37A00;
                 }
                 
                 .swiper-button-prev,

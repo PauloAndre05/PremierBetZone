@@ -76,7 +76,7 @@ export const ComoFunciona = () => {
                     </a>
                 </div>
                     
-                <div className="flex h-[550px] justify-center items-center w-[50%] rounded-lg overflow-hidden shadow-md max-md:self-end max-md:h-[250px] max-md:w-[35%]">
+                <div className="flex h-[550px] justify-center items-center w-[50%] rounded-lg overflow-hidden shadow-md max-md:self-end max-md:h-[250px] max-md:w-[35%] max-lg:hidden">
                     <img src={comoFunciona} alt="" className="object-cover h-full w-full" />
                 </div>
             </div>
