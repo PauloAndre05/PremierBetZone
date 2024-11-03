@@ -16,9 +16,9 @@ export const HeaderDesktop = () => {
 
     return(
         <div className="flex justify-between items-center p-3 bg-[#009A47] max-md:hidden">
-            <div className="w-28">
+            <a href="/" className="w-28">
                 <img src={Logo} alt="LogoPremierBet" />
-            </div>
+            </a>
             <NavBar />
             <div className="flex gap-1">
                 <button onClick={handleClick} className="flex gap-1 items-center p-2 bg-[#FAE100] text-[#000]">

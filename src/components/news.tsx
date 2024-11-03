@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 
 export const News = () => {
     return(
-        <div className="max-w-screen-xl max-md:max-w-[90%] mx-auto">
+        <div className="max-w-screen-xl max-md:max-w-[90%] mx-auto overflow-hidden">
             <style>{`
                 .swiper-pagination-bullet-active {
                     background-color: #E37A00;

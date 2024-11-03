@@ -45,11 +45,12 @@ export const Modal:FC<ModalProps> = ({ isOpenModal, setIsOpenModal }) => {
                     </div>
                 </div>
                 <p className="text-sm max-lg:xs text-center my-3">Utilize este código ao cadastrar-se na maior plataforma de apostas do país</p>
-                <Link to="https://www.premierbet.co.ao/bonus/register-exclusive-welcome-bonus?btag=691844_c09ba9bd59ff4d45885aeb846b623dc9&utm_medium" 
+                <a target="_blank" href="https://www.premierbet.co.ao/bonus/register-exclusive-welcome-bonus?btag=691844_c09ba9bd59ff4d45885aeb846b623dc9&utm_medium" 
                     className="w-full h-8 bg-[#E37A00] text-sm text-white self-end rounded-md flex justify-center items-center"
+                    onClick={ () => setIsOpenModal(false) }
                 >
                     Avançar
-                </Link>
+                </a>
             </div>
 
             <div className="absolute backdrop-blur-[3px] inset-0 z-30 bg-black/20" onClick={ () => setIsOpenModal(false) }/>

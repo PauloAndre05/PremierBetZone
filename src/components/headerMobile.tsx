@@ -50,9 +50,9 @@ export const HeaderMobile = () => {
                     >
                         <HiMenuAlt2  size={24} color="#FFF"/>
                     </div>
-                    <div className="w-24">
+                    <a href="/" className="w-24">
                         <img src={Logo} alt="LogoPremierBet" />
-                    </div>
+                    </a>
                 </div>
                 <div className="flex gap-1">
                     <button onClick={handleClick} className="flex flex-col gap-1 items-center p-3 bg-[#FAE100] text-[#000]">
@@ -72,13 +72,14 @@ export const HeaderMobile = () => {
                 <div className={`absolute w-full backdrop-blur-lg left-0 top-0  bg-[#000000be] z-50 ${isOpenMenu ? "" : "hidden"}`}>
                     <ul className="flex flex-col w-full">
                         {menu.map(item => (
-                            <a href="https://www.premierbet.co.ao/bonus/register-exclusive-welcome-bonus?btag=691844_c09ba9bd59ff4d45885aeb846b623dc9&utm_medium"
+                            <button
                                 key={item.id}
                                 className="flex items-center text-white border-b py-3 px-3 border-[#e0e0e01f]"
+                                onClick={ () => {setIsOpenModal(true), setIsOpenMenu(false)}}
                             >
                                 <i className="max-md:hidden">{item.icon}</i>
                                 <p className="text-sm textrigh text-[#cccccc]">{item.name}</p>
-                            </a>
+                            </button>
                         ))}
                     </ul>
                     <div 
@@ -87,7 +88,7 @@ export const HeaderMobile = () => {
                     >
                         x
                     </div>
-                </div> 
+                </div>
             </div>
             <Modal 
                 isOpenModal={isOpenModal}

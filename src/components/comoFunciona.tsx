@@ -1,20 +1,24 @@
+import { useState } from "react"
 import { comoFunciona } from "../assets/images"
+import { Modal } from "./modal"
 
 export const ComoFunciona = () => {
+
+    const [isOpenModal, setIsOpenModal] = useState(false)
 
     const passos = [
         {
             title: "Código promocional",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            description: "Na página de registro, lembre-se de inserir nosso código promocional para aproveitar os benefícios exclusivos. O código não será preenchido automaticamente, então digite-o no campo designado",
         },
         {
             title: "Cadastro",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            description: "Preencha todos os campos obrigatórios com suas informações pessoais, incluindo nome, e-mail, número de telefone e senha. Certifique-se de usar dados válidos para facilitar o acesso à conta",
       
         },
         {
             title: "Grupo",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+            description: "Depois de concluir o registro, você poderá fazer parte do nosso grupo exclusivamente no WhatsApp! Lá, compartilharemos dicas, estratégias e as últimas novidades para aproveitar ao máximo suas oportunidades",
         },
     ]
 
@@ -23,7 +27,7 @@ export const ComoFunciona = () => {
     return (
         <div className="max-w-screen-xl mx-auto py-20 max-md:py-10 max-md:w-[90%]">
             <div className="w-full flex md:gap-6 max-md:flex-col">
-                <div className="w-48 max-md:hidden flex flex-col justify-center items-center mt-[10px]">
+                <div className="w-48 max-md:hidden flex flex-col justify-center items-center mt-12">
                     <span className="text-[#ffff] text-[30px] font-bold bg-[#E37A00] w-[50px] h-[50px] flex justify-center items-center rounded-full">
                         1
                     </span>
@@ -68,18 +72,22 @@ export const ComoFunciona = () => {
                         </div>
                     ))}
 
-                    <a 
-                        href="https://www.premierbet.co.ao/bonus/register-exclusive-welcome-bonus?btag=691844_c09ba9bd59ff4d45885aeb846b623dc9&utm_medium"
+                    <button 
+                        onClick={ () => setIsOpenModal(true) }
                         className="bg-[#E37A00] rounded-full w-[150px] h-[40px] py-[10px] px-[18px] box-border text-[white] text-center font-semibold text-xs hover:bg-transparent hover:text-[#E37A00] hover:border-[0.01rem] hover:border-[#E37A00] shadow-md"
                     >
                         Registar-se
-                    </a>
+                    </button>
                 </div>
                     
-                <div className="flex h-[550px] justify-center items-center w-[50%] rounded-lg overflow-hidden shadow-md max-md:self-end max-md:h-[250px] max-md:w-[35%] max-lg:hidden">
+                <div className="flex justify-center items-center w-[50%] rounded-lg overflow-hidden shadow-md max-md:self-end max-md:h-[250px] max-md:w-[35%] max-lg:hidden">
                     <img src={comoFunciona} alt="" className="object-cover h-full w-full" />
                 </div>
             </div>
+            <Modal
+                isOpenModal={isOpenModal}
+                setIsOpenModal={setIsOpenModal}
+            />
         </div>
     )
 }
