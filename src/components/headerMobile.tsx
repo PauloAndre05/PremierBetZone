@@ -36,11 +36,17 @@ export const HeaderMobile = () => {
     const handleClick = () => {
         setIsOpenModal(true)
     }
+    const toggleMenu = () => {
+        setIsOpenModal(true)
+        setIsOpenMenu(false)
+    }
 
     return(
         <div className="bg-[#009A47] md:hidden w-fulll flex flex-col">
-            <div className="border-b border-[#e0e0e083] py-1">
-                <NavBar />
+            <div className="relative h-14 z-40">
+                <div className="border-b border-[#e0e0e083] py-1 fixed top-0 right-0 left-0 max-h-fit bg-[#009A47] Z-40">
+                    <NavBar />
+                </div>
             </div>
             <div className="flex justify-between px-3">
                 <div className="flex gap-3 items-center">
@@ -75,7 +81,7 @@ export const HeaderMobile = () => {
                             <button
                                 key={item.id}
                                 className="flex items-center text-white border-b py-3 px-3 border-[#e0e0e01f]"
-                                onClick={ () => {setIsOpenModal(true), setIsOpenMenu(false)}}
+                                onClick={ toggleMenu }
                             >
                                 <i className="max-md:hidden">{item.icon}</i>
                                 <p className="text-sm textrigh text-[#cccccc]">{item.name}</p>

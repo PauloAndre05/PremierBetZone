@@ -52,7 +52,7 @@ export const Modal:FC<ModalProps> = ({ isOpenModal, setIsOpenModal }) => {
                 </a>
             </div>
 
-            <div className="absolute backdrop-blur-[3px] inset-0 z-30 bg-black/20" onClick={ () => setIsOpenModal(false) }/>
+            <div className="fixed backdrop-blur-[3px] inset-0 z-30 bg-black/20" onClick={ () => setIsOpenModal(false) }/>
         </div>
     )
 }
