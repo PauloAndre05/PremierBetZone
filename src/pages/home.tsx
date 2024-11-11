@@ -1,5 +1,4 @@
 import { Banner } from "../components/banner"
-import { HeaderDesktop } from "../components/headerDesktop"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,10 +11,8 @@ import {
     centralBanner3,
  } from "../assets/images/index"
 import { News } from "../components/news";
-import { Footer } from "../components/footer";
 import { Promocional } from "../components/promocional";
 import { ComoFunciona } from "../components/comoFunciona";
-import { HeaderMobile } from "../components/headerMobile";
 export const Home = () => {
 
     const sliderImages = [
@@ -37,8 +34,6 @@ export const Home = () => {
 
     return(
         <div>
-            <HeaderDesktop />
-            <HeaderMobile />
             <Banner />
             <div className="md:my-10 max-w-screen-lg mx-auto">
                 <Slider {...settings}>
@@ -50,7 +45,6 @@ export const Home = () => {
             <News />
             <ComoFunciona />
             <Promocional />
-            <Footer />
         </div>
     )
 }

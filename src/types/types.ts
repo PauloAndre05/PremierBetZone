@@ -1,6 +1,5 @@
 export interface CardNeswsType {
-    id?: number,
+    id: string,
     image: string,
-    text: string,
-    link: string
+    title: string,
 }
