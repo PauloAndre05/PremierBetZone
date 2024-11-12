@@ -10,14 +10,14 @@ export const Promocoes = () => {
 
   const { id } = useParams<{ id: string }>();
   const promocao = id
-    ? CardNewsInfo.find((promocao) => promocao.id === parseInt(id))
+    ? CardNewsInfo.find((promocao) => promocao.id === id)
     : null;
 
-  const data = promocao
+  console.log(promocao);
 
   return (
     <>
-      {data ? (
+      {promocao ? (
         <div className="p-3 h-full">
           <div className="flex items-center">
             <a href="/" className="text-blue-500 flex items-center text-sm">
@@ -27,13 +27,13 @@ export const Promocoes = () => {
           </div>
           <div className="w-full lg:h-[22rem] object-cover max-lg:">
             <img
-              src={data.image}
+              src={promocao.image}
               alt="bg"
               className="w-full h-full object-cover"
             />
           </div>
           <h1 className="text-center text-xl font-bold my-2">
-            {data.title}
+            {promocao.title}
           </h1>
           <button
             onClick={() => setIsOpenModal(true)}

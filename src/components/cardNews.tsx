@@ -11,7 +11,7 @@ export const CardNews: FC<CardNeswsType> = ({ id, image, title }) => {
         <img
           src={image}
           className={`w-full h-full object-cover ${
-            id === 3 ? "object-top" : ""
+            id === "3" ? "object-top" : ""
           }`}
         />
       </div>
