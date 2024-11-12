@@ -6,7 +6,7 @@ export const Footer = () => {
             <div>
                 <ButtonWhatsaap />
             </div>
-            <div className="text-white/60 text-center max-lg:text-sm">
+            <div className="text-white/60 text-center max-lg:text-sm shadow-sm">
                 <p>Copyright &copy; 2024 Josias Paulo Leitão Ribeiro | Parceiro Oficial Premier Bet Angola</p>
                 <span>Todos os direitos reservados</span>
             </div>
