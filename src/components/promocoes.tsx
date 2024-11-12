@@ -10,7 +10,7 @@ export const Promocoes = () => {
 
   const { id } = useParams<{ id: string }>();
   const promocao = id
-    ? CardNewsInfo.find((promocao) => promocao.id === id)
+    ? CardNewsInfo.find((promocao) => promocao.id === parseInt(id))
     : null;
 
   console.log(promocao);
