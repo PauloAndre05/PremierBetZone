@@ -7,15 +7,13 @@ export const CardNews: FC<CardNeswsType> = ({ id, image, title }) => {
       href={`/promocoes/${id}`}
       className="flex flex-col bg-white h-96 rounded-xl overflow-hidden"
     >
-      <div className="w-full h-[12rem]">
+      <div className="w-full h-[45%]">
         <img
           src={image}
-          className={`w-full h-full object-cover ${
-            id === "3" ? "object-top" : ""
-          }`}
+          className={`w-full h-full object-cover`}
         />
       </div>
-      <span className="text-center font-semibold text-lg flex-grow p-5 ">
+      <span className="font-semibold text-base p-3 text-justify flex-grow">
         {title}
       </span>
     </a>

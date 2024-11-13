@@ -1,4 +1,12 @@
 import Logo from "./logo.webp"
+
+
+import img1 from "./1.jpg"
+import img2 from "./2.jpg"
+import img3 from "./3.jpg"
+import img4 from "./4.jpg"
+import img5 from "./5.jpg"
+
 import principalBanner1 from "./principalBanner1.jpg"
 import principalBanner2 from "./principalBanner2.jpg"
 import principalBanner3 from "./principalBanner3.jpg"
@@ -35,5 +43,10 @@ export {
     tudoSobre,
     fundoFooter,
     comoFunciona,
-    colaboradoresBanner
+    colaboradoresBanner,
+    img1,
+    img2,
+    img3,
+    img4,
+    img5
 }

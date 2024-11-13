@@ -16,7 +16,7 @@ export const HeaderDesktop = () => {
 
     return(
         <div className="relative h-16 max-lg:hidden">
-            <div className="flex justify-between items-center p-3 bg-[#009A47]  fixed w-full z-40">
+            <div className="flex justify-between items-center px-3 py-1 bg-[#009A47]  fixed w-full z-40">
                 <a href="/" className="w-28">
                     <img src={Logo} alt="LogoPremierBet" />
                 </a>
