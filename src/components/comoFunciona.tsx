@@ -65,7 +65,7 @@ export const ComoFunciona = () => {
                 {passo.description}
               </p>
               <div className="lg:hidden inset-0 absolute flex justify-center">
-                <span className="absolute self-center -top-[1.2rem] text-[#ffff] text-xl font-bold bg-[#E37A00] w-10 h-10 flex justify-center items-center rounded-full ">
+                <span className="absolute self-center -top-[1rem] text-[#ffff] text- font-bold bg-[#E37A00] w-9 h-9 flex justify-center items-center rounded-full ">
                   {passo.id}
                 </span>
               </div>
