@@ -74,7 +74,7 @@ export const ComoFunciona = () => {
 
           <button
             onClick={() => setIsOpenModal(true)}
-            className="bg-[#E37A00] rounded-full w-[150px] h-[40px] py-[10px] px-[18px] box-border text-[white] text-center font-semibold text-xs hover:bg-transparent hover:text-[#E37A00] hover:border-[0.01rem] hover:border-[#E37A00] shadow-md"
+            className="bg-[#E37A00] rounded-full w-[150px] h-[40px] max-lg:w-full py-[10px] px-[18px] box-border text-[white] text-center font-semibold text-xs hover:bg-transparent hover:text-[#E37A00] hover:border-[0.01rem] hover:border-[#E37A00] shadow-md"
           >
             Registar-se
           </button>
