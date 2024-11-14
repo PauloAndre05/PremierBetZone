@@ -9,6 +9,13 @@ export const News = () => {
                 .swiper-pagination-bullet-active {
                     background-color: #E37A00;
                 }
+
+                @media (max-width: 640px) {
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none; /* Esconde as setas de navegação no mobile */
+        }
+    }
                 
                 .swiper-button-prev,
                 .swiper-button-next {
