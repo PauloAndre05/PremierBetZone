@@ -42,14 +42,14 @@ export const HeaderMobile = () => {
     }
 
     return(
-        <div className="bg-[#009A47] md:hidden w-fulll flex flex-col">
-            <div className="relative h-14 z-40">
+        <div className="bg-[#009A47] lg:hidden w-fulll ">
+            <div className="relative h-11 z-30">
                 <div className="border-b border-[#e0e0e083] py-1 fixed top-0 right-0 left-0 max-h-fit bg-[#009A47] Z-40">
                     <NavBar />
                 </div>
             </div>
-            <div className="flex justify-between px-3">
-                <div className="flex gap-3 items-center">
+            <div className="flex justify-between px-3 ">
+                <div className="flex gap-3 items-center ">
                     <div 
                         className="cursor-pointer"
                         onClick={ () => setIsOpenMenu(true) }
@@ -60,7 +60,7 @@ export const HeaderMobile = () => {
                         <img src={Logo} alt="LogoPremierBet" />
                     </a>
                 </div>
-                <div className="flex gap-1">
+                <div className="flex gap-1 ">
                     <button onClick={handleClick} className="flex flex-col gap-1 items-center p-3 bg-[#FAE100] text-[#000]">
                         <i className="text-black"><PiPencilSimpleThin size={18}/></i>
                     </button>
@@ -69,9 +69,7 @@ export const HeaderMobile = () => {
                     </button>
                     <button onClick={handleClick} className="flex flex-col gap-1 items-center p-3 text-white">
                         <i><CiSearch size={20} /></i>
-                        
                     </button>
-
                 </div>
                 {/* Menu Mobile */}
 
@@ -83,7 +81,7 @@ export const HeaderMobile = () => {
                                 className="flex items-center text-white border-b py-3 px-3 border-[#e0e0e01f]"
                                 onClick={ toggleMenu }
                             >
-                                <i className="max-md:hidden">{item.icon}</i>
+                                <i className="max-lg:hidden">{item.icon}</i>
                                 <p className="text-sm textrigh text-[#cccccc]">{item.name}</p>
                             </button>
                         ))}

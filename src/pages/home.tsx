@@ -35,7 +35,7 @@ export const Home = () => {
     return(
         <div>
             <Banner />
-            <div className="md:my-10 max-w-screen-lg mx-auto">
+            <div className="lg:my-10 max-w-screen-lg mx-auto">
                 <Slider {...settings}>
                     {sliderImages.map(item => (
                         <img key={item.id} src={item.image} alt="ImageSlider" />

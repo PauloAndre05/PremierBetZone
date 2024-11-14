@@ -5,7 +5,7 @@ export const CardNews: FC<CardNeswsType> = ({ id, image, title }) => {
   return (
     <a
       href={`/promocoes/${id}`}
-      className="flex flex-col bg-white h-96 rounded-xl overflow-hidden"
+      className="flex flex-col bg-white h-96 rounded-xl overflow-hidden border"
     >
       <div className="w-full h-[45%]">
         <img

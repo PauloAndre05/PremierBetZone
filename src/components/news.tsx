@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 
 export const News = () => {
     return(
-        <div className="max-w-screen-xl max-md:max-w-[90%] mx-auto overflow-hidden">
+        <div className="max-w-screen-xl max-lg:max-w-[90%] mx-auto overflow-hidden">
             <style>{`
                 .swiper-pagination-bullet-active {
                     background-color: #E37A00;
@@ -50,7 +50,7 @@ export const News = () => {
                         spaceBetween: 10
                     },
                     728: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         spaceBetween: 10
                     },
                     

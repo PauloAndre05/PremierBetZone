@@ -33,13 +33,13 @@ export const NavBar = () => {
 
     return (
         <nav className="flex">
-            <ul className="flex md:gap-3 max-md:overflow-x-auto w-full max-md:ml-3 scrollbar-hidden">
+            <ul className="flex lg:gap-3 max-lg:overflow-x-auto w-full max-lg:ml-3 scrollbar-hidden">
                 {menu.map(item => (
                     <button onClick={handleClick}
                         key={item.id}
-                        className="flex gap-1 items-center text-white max-md:py-[.7rem] max-md:mr-3"
+                        className="flex gap-1 items-center text-white max-lg:py-[.7rem] max-lg:mr-3"
                     >
-                        <i className="max-md:hidden">{item.icon}</i>
+                        <i className="max-lg:hidden">{item.icon}</i>
                         <p className="text-sm max-lg:text-xs text-nowrap">{item.name}</p>
                     </button>
                 ))}

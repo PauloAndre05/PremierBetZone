@@ -27,9 +27,9 @@ export const ComoFunciona = () => {
   ];
 
   return (
-    <div className="max-w-screen-xl mx-auto py-20 max-md:py-10 max-md:w-[90%]">
-      <div className="w-full flex md:gap-6 max-md:flex-col">
-        <div className="w-48 max-md:hidden flex flex-col justify-center items-center mt-12">
+    <div className="max-w-screen-xl mx-auto py-20 max-lg:py-10 max-lg:w-[90%]">
+      <div className="w-full flex lg:gap-6 max-lg:flex-col">
+        <div className="w-48 max-lg:hidden flex flex-col justify-center items-center mt-12">
           <span className="text-[#ffff] text-[30px] font-bold bg-[#E37A00] w-[50px] h-[50px] flex justify-center items-center rounded-full">
             1
           </span>
@@ -49,7 +49,7 @@ export const ComoFunciona = () => {
 
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-4">
-            <h3 className="text-bold text-[16px] text-[#00000080] max-md:hidden">
+            <h3 className="text-bold text-[16px] text-[#00000080] max-lg:hidden">
               COMO FUNCIONA
             </h3>
 
@@ -74,13 +74,13 @@ export const ComoFunciona = () => {
 
           <button
             onClick={() => setIsOpenModal(true)}
-            className="bg-[#E37A00] rounded-full w-[150px] h-[40px] max-lg:w-full py-[10px] px-[18px] box-border text-[white] text-center font-semibold text-xs hover:bg-transparent hover:text-[#E37A00] hover:border-[0.01rem] hover:border-[#E37A00] shadow-md"
+            className="bg-[#E37A00] rounded-full w-[150px] h-[40px] max-lg:w-full py-[10px] px-[18px] box-border text-[white] text-center font-semibold text-xs hover:bg-transparent hover:text-[#E37A00] hover:border-[0.01rem] hover:border-[#E37A00] shadow-lg"
           >
             Registar-se
           </button>
         </div>
 
-        <div className="flex justify-center items-center w-[50%] rounded-lg overflow-hidden shadow-md max-md:self-end max-md:h-[250px] max-md:w-[35%] max-lg:hidden">
+        <div className="flex justify-center items-center w-[50%] rounded-lg overflow-hidden shadow-lg max-lg:self-end max-lg:h-[250px] max-lg:w-[35%] max-lg:hidden">
           <img
             src={comoFunciona}
             alt=""

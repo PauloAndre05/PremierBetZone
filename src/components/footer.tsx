@@ -62,8 +62,8 @@ export const Footer = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center gap-36 border-b border-white/50 pb-4 flex-wrap max-md:flex-col max-md:items-center max-md:gap-2">
-        <div className="max-md:text-center">
+      <div className="flex justify-center gap-36 border-b border-white/50 pb-4 flex-wrap max-lg:flex-col max-lg:items-center max-lg:gap-2">
+        <div className="max-lg:text-center">
           <h2 className="font-bold">Links rápidos</h2>
           <div className="flex flex-col">
             {menu
@@ -75,7 +75,7 @@ export const Footer = () => {
               ))}
           </div>
         </div>
-        <div className="max-md:text-center">
+        <div className="max-lg:text-center">
           <h2 className="font-bold">Contactos</h2>
           <div className="flex flex-col text-white/70 text-sm">
             <span> + 244 944 617 903</span>
@@ -83,13 +83,13 @@ export const Footer = () => {
             <span>premierbet@gmail.com</span>
           </div>
         </div>
-        <div className="flex flex-col max-md:text-center">
+        <div className="flex flex-col max-lg:text-center">
           <h2 className="font-bold">Comunidade</h2>
           <span className="text-white/70 mb-2 text-sm">
             Junte-se à nossa comunidade de apostadores e aprenda a ganhar na
             Premierbet
           </span>
-          <div className="self-start max-md:self-center">
+          <div className="self-start max-lg:self-center">
             <ButtonWhatsaap />
           </div>
         </div>
