@@ -59,13 +59,13 @@ export const ComoFunciona = () => {
           </div>
 
           {passos.map((passo) => (
-            <div className="bg-[#FFF] border-none p-6 rounded-xl relative flex flex-col" key={passo.id}>
+            <div className="bg-[#FFF] border-none p-6 rounded-xl relative flex flex-col max-lg:mt-3" key={passo.id}>
               <h3 className="text-[.9rem] font-semibold">{passo.title}</h3>
               <p className="text-[.83rem] text-slate-500 font-medium">
                 {passo.description}
               </p>
-              <div className="lg:hidden inset-0 absolute flex items-center">
-                <span className="absolute self-center -left-[1.15rem] text-[#ffff] text-lg font-bold bg-[#E37A00] w-9 h-9 flex justify-center items-center rounded-full ">
+              <div className="lg:hidden inset-0 absolute flex justify-center">
+                <span className="absolute self-center -top-[1.2rem] text-[#ffff] text-xl font-bold bg-[#E37A00] w-10 h-10 flex justify-center items-center rounded-full ">
                   {passo.id}
                 </span>
               </div>
