@@ -13,7 +13,7 @@ export const CardNews: FC<CardNeswsType> = ({ id, image, title }) => {
           className={`w-full h-full object-cover`}
         />
       </div>
-      <span className="p-3 text-justify flex-grow">
+      <span className="p-3 text-justify flex-grow text-sm text-slate-500 max-lg:text-[.83rem]">
         {title}
       </span>
     </a>
