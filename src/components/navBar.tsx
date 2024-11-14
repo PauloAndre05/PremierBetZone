@@ -5,7 +5,7 @@ import { RiGroupLine, RiTimerFlashLine, RiVipFill } from "react-icons/ri"
 import { Modal } from "./modal"
 import { useState } from "react"
 
-const menu = [
+export const menu = [
     { id: 1, icon: <PiHouseLineLight size={20} />, name: "Desporto" },
     { id: 2, icon: <RiTimerFlashLine size={20} />, name: "Ao Vivo" },
     { id: 3, icon: "", name: "Vegas" },

@@ -25,27 +25,27 @@ export const Promocoes = () => {
             </a>
             <p className="text-sm">/promoções</p>
           </div>
-          <div className="w-full h-[20rem] object-cover bg-[#000] shadow-inherit shadow-xl">
+          <div className="w-full lg:h-[20rem] object-cover lg:bg-[#000] shadow-inherit shadow-xl">
             <img
               src={promocao.image}
               alt="bg"
               className="w-full h-full object-contain"
             />
           </div>
-          <h1 className="text-center text-xl font-bold my-2">
+          <h1 className="lg:text-center text-xl font-bold my-2 max-lg:text-justify max-lg:text-sm">
             {promocao.title}
           </h1>
           <button
             onClick={() => setIsOpenModal(true)}
-            className="bg-[#FAE100] w-full h-[40px] py-[10px] px-[18px] box-border font-bold text-center text-xs shadow-md uppercase opacity-60 hover:opacity-100"
+            className="bg-[#FAE100] w-full h-[40px] py-[10px] px-[18px] font-bold text-center text-xs hover:shadow-md uppercase"
           >
             Regista já
           </button>
           <div className="grid lg:grid-cols-3 mt-16 mb-8 lg:gap-3 max-lg:grid-rows-3 gap-16">
             {promocao.subtitle.map(item => (
               <div key={item.id} className="border border-[#009A47] relative flex flex-col items-center gap-4 h-24 rounded-md">
-                <span className="absolute -top-[35%] bg-[#009A47] rounded-full w-16 h-16 flex justify-center items-center text-white font-bold text-xl">1</span>
-                <p className="mt-12 text-[#009A47] font-bold">{item.title}</p>
+                <span className="absolute -top-[35%] bg-[#009A47] rounded-full w-16 h-16 flex justify-center items-center text-white font-bold text-xl">{item.id}</span>
+                <p className="mt-12 text-[#009A47] font-bold max-lg:text-sm text-center">{item.title}</p>
               </div>
             ))}
           </div>
@@ -56,12 +56,12 @@ export const Promocoes = () => {
           {promocao.content.map(item => (
             <div key={item.id}>
               <div className="flex flex-col gap-3 text-sm font-normal my-3">
-                <p>{item.title}</p>
+                <p className="max-lg:text-sm">{item.title}</p>
               </div>
               <div>
                 <div>
                   <h1 className="text-sm font-bold">{item.subtitle1}</h1>
-                  <ul className="ml-3 my-2">
+                  <ul className="ml-3 my-2 max-lg:text-xs">
                     <li>{item.text1}</li>
                     <li>{item.text2}</li>
                     <li>{item.text3}</li>
@@ -69,7 +69,7 @@ export const Promocoes = () => {
                 </div>
                 <div>
                   <h1 className="text-sm font-bold">{item.subtitle2}</h1>
-                  <ul className="ml-3 my-2">
+                  <ul className="ml-3 my-2 max-lg:text-xs">
                     <li>{item.text4}</li>
                     <li>{item.text5}</li>
                     <li>{item.text6}</li>

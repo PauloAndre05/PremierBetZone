@@ -7,6 +7,16 @@ import img3 from "./3.jpg"
 import img4 from "./4.jpg"
 import img5 from "./5.jpg"
 
+import foot1 from "./foot1.png"
+import foot2 from "./foot2.png"
+import foot3 from "./foot3.png"
+import foot4 from "./foot4.png"
+import foot5 from "./foot5.jpg"
+import foot6 from "./foot6.jpg"
+import foot7 from "./foot7.png"
+import foot8 from "./foot8.png"
+import foot9 from "./foot8.png"
+
 import principalBanner1 from "./principalBanner1.jpg"
 import principalBanner2 from "./principalBanner2.jpg"
 import principalBanner3 from "./principalBanner3.jpg"
@@ -48,5 +58,14 @@ export {
     img2,
     img3,
     img4,
-    img5
+    img5,
+    foot1,
+    foot2,
+    foot3,
+    foot4,
+    foot5,
+    foot6,
+    foot7,
+    foot8,
+    foot9
 }

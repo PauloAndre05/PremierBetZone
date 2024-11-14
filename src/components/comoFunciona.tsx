@@ -7,16 +7,19 @@ export const ComoFunciona = () => {
 
   const passos = [
     {
+      id: 1,
       title: "Código promocional",
       description:
         "Na página de registro, lembre-se de inserir nosso código promocional para aproveitar os benefícios exclusivos. O código não será preenchido automaticamente, então digite-o no campo designado",
     },
     {
+      id: 2,
       title: "Cadastro",
       description:
         "Preencha todos os campos obrigatórios com suas informações pessoais, incluindo nome, e-mail, número de telefone e senha. Certifique-se de usar dados válidos para facilitar o acesso à conta",
     },
     {
+      id: 3,
       title: "Grupo",
       description:
         "Depois de concluir o registro, você poderá fazer parte do nosso grupo exclusivamente no WhatsApp! Lá, compartilharemos dicas, estratégias e as últimas novidades para aproveitar ao máximo suas oportunidades",
@@ -31,13 +34,13 @@ export const ComoFunciona = () => {
             1
           </span>
 
-          <span className="w-[5px] h-[75px] bg-[#E37A00] mt-2 mb-2" />
+          <span className="w-[5px] h-[65px] bg-[#E37A00] mt-2 mb-2" />
 
           <span className="text-[#ffff] text-[30px] font-bold bg-[#E37A00] w-[50px] h-[50px] flex justify-center items-center rounded-full">
             2
           </span>
 
-          <span className="w-[5px] h-[75px] bg-[#E37A00] mt-2 mb-2" />
+          <span className="w-[5px] h-[65px] bg-[#E37A00] mt-2 mb-2" />
 
           <span className="text-[#ffff] text-[30px] font-bold bg-[#E37A00] w-[50px] h-[50px] flex justify-center items-center rounded-full">
             3
@@ -46,7 +49,7 @@ export const ComoFunciona = () => {
 
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-4">
-            <h3 className="text-bold text-[16px] text-[#00000080] font-[Montserrat] max-md:hidden">
+            <h3 className="text-bold text-[16px] text-[#00000080] max-md:hidden">
               COMO FUNCIONA
             </h3>
 
@@ -55,12 +58,17 @@ export const ComoFunciona = () => {
             </h1>
           </div>
 
-          {passos.map((passo, index) => (
-            <div className="bg-[#FFF] border-none p-6 rounded-xl" key={index}>
+          {passos.map((passo) => (
+            <div className="bg-[#FFF] border-none p-6 rounded-xl relative flex flex-col" key={passo.id}>
               <h3 className="text-[.9rem] font-semibold">{passo.title}</h3>
               <p className="text-[.83rem] text-slate-500 font-medium">
                 {passo.description}
               </p>
+              <div className="lg:hidden inset-0 absolute flex items-center">
+                <span className="absolute self-center -left-[1.15rem] text-[#ffff] text-lg font-bold bg-[#E37A00] w-9 h-9 flex justify-center items-center rounded-full ">
+                  {passo.id}
+                </span>
+              </div>
             </div>
           ))}
 
